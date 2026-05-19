@@ -3,6 +3,8 @@ from dash import dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
 
+print("Motti")
+
 # נתונים לדוגמה
 df = px.data.iris()
 
