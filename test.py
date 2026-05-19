@@ -4,6 +4,8 @@ import plotly.express as px
 import pandas as pd
 print("this is Simon")
 
+print ("this is maor")
+
 # נתונים לדוגמה
 df = px.data.iris()
 
