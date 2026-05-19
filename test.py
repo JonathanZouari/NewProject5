@@ -4,6 +4,7 @@ import plotly.express as px
 import pandas as pd
 
 # נתונים לדוגמה
+print("David")
 df = px.data.iris()
 
 app = dash.Dash(__name__)
