@@ -2,6 +2,18 @@ import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
+# נוסיף נתוני דוגמה לפרח רקפת (cyclamen), עם מאפיינים דומים
+cyclamen_data = {
+    "sepal_length": [2.5, 2.7, 2.6, 2.8, 2.9, 2.4, 2.6, 2.7, 2.5, 2.8],
+    "sepal_width": [1.1, 1.0, 1.2, 1.2, 1.1, 1.3, 1.1, 1.2, 1.2, 1.1],
+    "petal_length": [1.8, 2.0, 1.7, 2.1, 2.0, 1.9, 1.8, 2.1, 1.9, 2.0],
+    "petal_width": [0.3, 0.4, 0.2, 0.3, 0.2, 0.4, 0.3, 0.2, 0.2, 0.3],
+    "species": ["cyclamen"] * 10
+}
+cyclamen_df = pd.DataFrame(cyclamen_data)
+
+# צור DataFrame מאוחד של איריס ורקפת
+df = pd.concat([px.data.iris(), cyclamen_df], ignore_index=True)
 
 # נתונים לדוגמה
 df = px.data.iris()
