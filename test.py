@@ -2,7 +2,7 @@ import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
-
+print("Hi Maayan")
 # נתונים לדוגמה
 df = px.data.iris()
 
